@@ -1,0 +1,26 @@
+//Subarray 
+//formula=n(n+1)/2
+
+#include<iostream>
+#include<vector>
+using namespace std;
+class solution{
+public:
+     void subarray(vector<int>&arr){
+       for(int st=0;st<arr.size();st++){
+           for(int end=st;end<arr.size();end++){
+               for(int i=st;i<end;i++){
+                cout<<arr[i];
+      }
+            cout<<" ";
+      }
+          cout<<endl;
+      }
+      }
+    };
+int main(){
+ solution s1;
+vector<int>arr{1,2,3,4,5};
+s1.subarray(arr);
+return 0;
+}
