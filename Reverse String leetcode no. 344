@@ -1,0 +1,24 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+class solution{
+    public:
+void reverseString(vector<char>&s){
+    int st=0;
+    int end=s.size()-1;
+    while(st<end){
+        swap(s[st],s[end]);
+        st++;
+        end--;
+     }
+}
+};
+int main(){
+    solution s1;
+    vector<char>s{'h','s','r','a','h'};
+    s1.reverseString(s);
+    for(int i=0;i<s.size();i++){
+        cout<<s[i]<<"";
+    }
+    return 0;
+}
